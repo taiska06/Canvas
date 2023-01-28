@@ -69,7 +69,7 @@ public class MyDraw extends View {
         paint.setStyle(Paint.Style.FILL); // заливка
         canvas.drawRect(30, 1475, 460, 975, paint);
         paint.setStyle(Paint.Style.STROKE); // заливка
-        paint.setColor(Color.GRAY);
+        paint.setColor(Color.RED);
         canvas.drawRect(30, 1475, 460, 975, paint);
 
         paint.setColor(Color.rgb(2000,0,0));
@@ -89,9 +89,9 @@ public class MyDraw extends View {
         paint.setColor(Color.YELLOW);
         Path path1 = new Path();
         path1.moveTo(0, 0);
-        int y2 = 30;
+        int y2 = 25;
         int x2 = 500;
-        while (x2 != 0 && y2 != 530) {
+        while (x2 != 0 && y2 != 505) {
             path1.lineTo(x2, y2);
             canvas.drawPath(path1, paint);
             path1.moveTo(0, 0);
